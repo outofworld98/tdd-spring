@@ -1,0 +1,40 @@
+GET http://localhost:8080/Devices/deviceA
+Accept: application/json
+
+###
+GET http://localhost:8080/Devices
+Accept: application/json
+
+###
+POST http://localhost:8080/Devices
+Content-Type: application/json
+
+{
+  "id": "deviceB",
+  "name": "deviceB Name"
+}
+
+
+###
+POST http://localhost:8080/Devices
+Content-Type: application/json
+
+{
+  "id": "deviceA",
+  "name": "deviceA Name"
+}
+
+###
+PUT http://localhost:8080/Devices
+Content-Type: application/json
+
+{
+  "id": "deviceB",
+  "name": "deviceBB Name"
+}
+
+###
+DELETE http://localhost:8080/Devices/deviceA
+Accept: application/json
+
+
